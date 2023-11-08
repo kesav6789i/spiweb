@@ -1,0 +1,26 @@
+*{
+    color: yellowgreen;
+}
+
+#id1{
+    color: blueviolet;
+}
+
+
+.head{
+    color: black;
+}
+
+h1,h2{
+    color:blue
+}
+
+
+#id2{
+    color: #ff0000;
+}
+
+pre{
+    color:rgb(88, 31, 41);
+    background-color: aquamarine;
+}
