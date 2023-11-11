@@ -1,0 +1,59 @@
+
+     /* element selector */
+     h1{
+        color:darkmagenta;
+       background-color: hotpink;
+     }
+
+
+     /* class selector */
+     .cls
+     {
+        background-color: grey;
+        color:rgb(255, 225, 255);
+     }
+
+
+     /* id selector */
+     #one{
+        background-color: greenyellow;
+     }
+
+
+     /* child selector */
+     div > p{
+        /* direct relation */
+         color: rgba(0, 0, 0, 0.616);
+        background-color: yellow;
+     }
+
+
+     /* descendant selector */
+     div  p{
+        /* indirect relation */
+        color: yellowgreen;
+        background-color: red;
+     }
+     
+
+     /* universal selector */
+
+
+
+     /* pseudo selector */
+
+     a:link{
+     color:black;
+     }
+     
+     a:active{
+        color: aqua;
+     }
+
+     a:visited{
+        color:red;
+     }
+
+     a:hover{
+        color:rgb(0, 128, 15);
+     }
