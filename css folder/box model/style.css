@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    background-color: aqua;
+    padding: 25px;
+    border-width:2px;
+    border-style:groove;
+    border-color:blue ;
+    /* border:2px groove blue; */
+    border-radius :5px;
+    width:260px;
+    text-align:end; /* end of the element box*/
+    box-sizing: border-box; 
+    /* 
+    note:
+       1. without box-sizing the width and height are taken by the element box
+       2. whereas in box-sizing width is taken as sum of (width of element + width of padding + width of border)
+     */
+
+}
