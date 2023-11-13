@@ -17,7 +17,10 @@ overflow: hidden;
 text-overflow: ellipsis;
 /* text-overflow: clip; */
    
-word-break:break-all; /* <<--try this or comment this line to know the difference */
+/* word-break:break-all;
+word-wrap:break-word;
+*/
+ /* <<--try this or comment  above one of lines to know the difference */
 
 
 
