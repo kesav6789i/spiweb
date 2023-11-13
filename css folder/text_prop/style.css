@@ -16,7 +16,11 @@ background-color: rebeccapurple;
 overflow: hidden;
 text-overflow: ellipsis;
 /* text-overflow: clip; */
-    /*  */
+   
+word-break:break-all; /* <<--try this or comment this line to know the difference */
+
+
+
 }
 
 p{
