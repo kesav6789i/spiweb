@@ -1,0 +1,9 @@
+p{
+ 
+    color:#CB8CFF;  /*  hex cs */
+    color: rgb(203, 140, 255);  /* rgb  cs ---->rgb=red,green,blue  */
+    color:rgba(203, 140, 255, 1) ;  /*  rgba cs ---->a=alpha */
+    color:hsl(273, 100%, 78%) ;  /* hsl  */
+  color: plum;    /*  normal cs */
+
+}
