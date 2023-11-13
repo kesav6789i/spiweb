@@ -1,0 +1,42 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+h1{
+    font-weight: 200;
+   text-decoration: underline overline;
+   text-decoration-color:aqua ;
+   text-decoration-style: wavy;
+   text-decoration-thickness: 1px;
+    font-family: cursive;
+    /* text-align : center ; */
+/* text-indent:200px; */
+width:10%;
+background-color: rebeccapurple;
+overflow: hidden;
+text-overflow: ellipsis;
+/* text-overflow: clip; */
+    /*  */
+}
+
+p{
+    font-weight: 100;
+    font-size:x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+pre{
+    /* through link font is added */
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+div{
+
+     /* through import statement */
+     font-family: 'Dancing Script', cursive;
+}
+
+span{
+   letter-spacing: 2px; /*space b/w letter*/
+    line-height: 2;
+    text-transform: uppercase;
+}
