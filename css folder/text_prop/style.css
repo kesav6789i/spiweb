@@ -44,6 +44,6 @@ div{
 
 span{
    letter-spacing: 2px; /*space b/w letter*/
-    line-height: 2;
+    line-height: 2px;
     text-transform: uppercase;
 }
