@@ -8,10 +8,16 @@
     color:cadetblue;
 }
 
-.hanu{
-/* sp=10,000 */
+.hanu
+    {
+    color: orange ;
+    }
+
+
+/* sp=10,000  try the below code */
+/* .hanu{
 color: orange !important;
-}
+} */
 
 .lakshman{
 /* sp=10 */
