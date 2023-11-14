@@ -1,0 +1,31 @@
+.janaki{
+    /* specificity=10 */
+    color:aqua;
+}
+
+.rama{
+     /* specificity=10 */
+    color:cadetblue;
+}
+
+.hanu{
+/* sp=10,000 */
+color: orange !important;
+}
+
+.lakshman{
+/* sp=10 */
+color: blue;
+}
+
+#ramayan{
+ 
+    /* sp=100 */
+  color: red;
+}
+
+p#ramayan{
+
+    /* sp=1+100=101 */
+   color:brown;
+}
