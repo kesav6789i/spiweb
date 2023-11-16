@@ -1,48 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>units</title>
     <style>
-        html{
-            font-size: 20px;
+        * {
+            padding: 0;
+            margin: 0;
         }
-     p{
-        width:500px;
-        background-color: rgb(168, 114, 114);
-   
-     }
-     .div{
-         border:2px solid black;
-         /* margin:30px; */
-         margin:40px auto;
-        width:50vw;
-        background-color: orangered;
-        /* height:100vh; */
-        font-size: 2em;
-     }
 
-     span{
+        html {
+            font-size: 16px;
+        }
 
-         width: 200px;
-         height:200px;
-         background-color: #793636;
-         padding:100px;
-         margin : 200px;
+        .box {
+            border: 4px double black;
+            /* 1 mm=3.7px */
+            border-style: double;
+            padding: 10px;
+            color: aqua;
+            /* width:200px; */
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.453);
+        }
 
-     }
+        .container {
+            border: 4px double black;
+            /* 1 mm=3.7px */
+            border-style: double;
+            padding: 10px;
+            color: aqua;
+            /* width:200px; */
+            width: 100vw;
+            /* height: 100vh; */
+            min-height: 100vh;
+            background-color: green;
+            box-sizing: border-box;
+            margin: 20px auto;
+            font-size: 4em;/* 64px*/
+
+        }
+
+        .container p {
+            font-size: 2rem;
+            /* font-size: 2em; */
+            /* padding:3em;  */
+            /* here padding is 3*(font-size) = 3*128  = 384px */
+            /* margin:2em; */
+            /*here container font size is (4*16)=64px ......this para is 64*2=128px*/
+        }
+        .vminmax{
+            color:aquamarine;
+            background-color: blue;
+            width:vmin;
+            width:100vh;
+        }
 
     </style>
 </head>
-<body>
-    <!-- <p>through pixel u cannot exactly match the every screen</p> -->
 
-     <p class ="div">through view port u can exactly match the every yyjy yyi ygyi yjgyg gyguiiiiiiiscreen
-        <a>ifjiorfierpif</a>
-     </p>
-     <span>kfffiff</span>
-     <a href="#">not a clckable link</a>
-     <h1 >this is heading</h1>
-</body>
+<body>
+    <div class="box">this is box</div>
+    <div class="container">
+        <p>iam ok 😁😁😁</p>
+        this is container Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quo officiis
+        earum voluptas quasi? Quas eum eligendi pariatur. Delectus molestiae laboriosam ad ipsam, nulla necessitatibus
+        provident veritatis ex voluptates natus vel corporis magnam vitae aut nobis aliquid officia itaque velit
+        reiciendis nihil optio explicabo expedita recusandae! Rerum aut consequatur cumque, cupiditate maxime odit
+        officia! Provident, sint cupiditate molestias unde magni quia corporis, doloribus illo voluptatibus distinctio
+        consequuntur odio, facere tempore?
+    </div>
+    <p class="vminmax">hi lets test on vmin and vmax</p>
+  <!-- 
+    let me give u short description about vmin and vmax
+  vmin = shortest of width and height of viewport
+  vmax = maximum of width and height of viewport
+  example in phone : width is min i.e(width: vmin  or width:100vw)
+  example in laptop : height is min i.e(width: vmin  or width:100vh) 
+-->
+<!-- What I understood is:
+px depends on resolution,
+vh vw are device specific,
+vmin and vmax depends on orientation,
+em is multiplier on current value,
+rem is a multiplier on current value in respective to the root element,
+% depends on parent -->
+
+
+
 </html>
