@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display properties 23</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px dotted rgba(43, 86, 226, 0.351);
+            background-color: aqua;
+            display: inline;
+            padding: 30px;
+            margin: 25px;
+            /* visibility: hidden; */
+        }
+        .box2{
+
+            border: 2px dotted rgba(43, 86, 226, 0.351);
+            background-color: rgb(242, 255, 0);
+            display: inline-block;
+            padding: 30px;
+            margin: 25px;
+        }
+        .span
+        {
+            border: 2px dotted rgba(43, 86, 226, 0.351);
+            background-color: rgb(0, 255, 68);
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">hi iam div 1</div>
+    <div class="box box2">hi iam div 2</div>
+    <span class="span">hi iam span1</span>
+    <span class="span">iam span2</span>
+  
+</body>
+<!-- 
+1.inline - Takes only the space required by the element. (no margin/ padding)
+2.block - Takes full space available in width.
+3.(inline-block) - Similar to inline but we can set margin & padding.
+4.none - To remove element from document flow.
+display: inline / block / inline-block / none
+
+
+Note : When visibility is set to none, space for the element is reserved.But for display set to none, no space is reserved or blocked for the element.
+visibility: hidden; 
+-->
+
+</html>
