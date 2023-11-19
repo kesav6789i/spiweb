@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lists styling</title>
+    <style>
+        .num_type li{
+            list-style-type:decimal;
+            background-color: yellow;
+            /* default list position is outside  */
+        }
+        .position li{
+            list-style-position: inside;
+            background-color: rgb(251, 240, 255);
+        }
+        .image li{
+            list-style-image: url("C:\Users\keerthi\Pictures\Screenshots\Screenshot 2023-11-11 131439.png");
+            background-color: rgb(32, 14, 107);
+        }
+        .all li{
+
+            list-style:lower-roman inside url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9p90he_jHveHXQlNdr7IqmA08q5QhBxALn3zMAUOQ_MdISKijLvgWPFIXxYIvTVDy1VU&usqp=CAU") ;/*type postion image*/
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="num_type">
+    <ol>
+        <li>hi</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    </div>
+    <div class="position">
+        <ol>
+            <li>hi</li>
+            <li>two</li>
+            <li style="list-style: none;">three</li>
+        </ol>
+</div>
+<div class="image">
+    <ol>
+        <li>hi</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+</div>
+<div class="all">
+    <ol>
+        <li>hi</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+</div>
+</body>
+</html>
