@@ -1,0 +1,25 @@
+****Position****
+
+
+The position CSS property sets how an element is positioned in a document.
+position : static / relative / absolute / fixed
+Position
+static - default position (The top, right, bottom, left, and z-index properties have no effect)
+relative - element is relative to itself. (The top, right, bottom, left, and z-index will work)
+absolute - positioned relative to its clo sest positioned ancestor. (removed from the flow)
+fixed - positioned relative to browser. (removed from flow)
+
+******z-index*****
+
+
+It decides the stack level of elements
+z-index : auto (0)
+z-index : 1 / 2 / ...
+z-index : -1 / -2 / ...
+
+read it to understand better :)
+
+1.generally z-index is zero...but in first and second ...the second has highest z value than the first until u set the z-index for it....
+2.the more the z-index the more its value
+3.if position is static then z-value cannot be set 
+
