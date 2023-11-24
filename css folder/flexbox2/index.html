@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox22</title>
+    <style>
+        .carrage {
+            border: 2px solid black;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            /* align-content: center; */
+            /* flex-direction: column; */
+            gap: 3px;
+            /* row-gap: 20px; */
+            /* column-gap: 2px; */
+            /* gap:20px 2px; */
+
+        }
+
+        .dabba {
+            width: 50px;
+            height: 40px;
+            border: 2px solid red;
+            background-color: yellowgreen;
+            /* margin: 3px; */
+
+        }
+
+        .b2 {
+            align-self: flex-start;
+            order: 2;
+            flex-shrink: 0;
+
+            /* comment all 3 prop and try flex-grow */
+            /* flex-grow:1  */
+        }
+
+        .b3 {
+
+            order: 3;
+            /* high the value,
+            high chances to be place in the last position */
+        }
+
+        .b4 {
+            order: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carrage">
+        <div class="dabba">1</div>
+        <div class="dabba b2">2</div>
+        <div class="dabba b3">3</div>
+        <div class="dabba b4">4</div>
+        <div class="dabba">5</div>
+        <div class="dabba">6</div>
+        <div class="dabba">7</div>
+        <div class="dabba">8</div>
+        <div class="dabba">9</div>
+    </div>
+
+    <!--
+    note: align-self  ,, order(default:0)
+,,flex-grow ,, flex-shrink    are for dabbas</body> 
+-->
+  
+<!-- flex-wrap is used for align-content  -->
+
+</html>
