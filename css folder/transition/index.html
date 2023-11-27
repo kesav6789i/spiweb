@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition properties</title>
+    <style>
+        .box{
+            width:250px;
+            height:250px;
+            background-color:palevioletred;
+            transition-property:background-color;
+            /* transition-property: width,font-size,background-color; */
+            /* you can apply it on the 3 functions ....*/
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+            /* shorthand-representation */
+            /* transition:background-color  3s ease-in 1s; */
+        }
+        .box:hover{
+            background-color:red;
+            font-size:30px;
+            width:800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">hi this is box where u can see my background and text transitions</div>
+    </div>
+</body>
+</html>
