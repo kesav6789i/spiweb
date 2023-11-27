@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transformations 2d</title>
+</head>
+    <style>
+        .box{
+            height:250px;
+            width:250px;
+            background-color: aqua;
+            border:2px solid black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-left:250px;
+            margin-top:150px;
+            /* transform: rotate(45deg); */
+            /* transform: rotate(0.5turn); */
+             /* 0=0deg
+             0.25=90deg
+             0.5=180deg */
+             /* transform: rotate(0.5turn); */
+           
+            /* transform: ; */
+            transition: all 3s ease-in-out 2s;
+        }
+        .box:hover{
+            /* transform: scale(2); */
+            /* transform:scale(2,0.5);
+            transform:xscale(2);
+            transform:yscale(0.5); */
+            /* transform: skew(90deg); */
+            background-color: blueviolet;
+           /* all properties at a tym nichey dheko */
+           transform: scale(2) rotate(90deg);
+        }
+    </style>
+<body>
+    <div class="box">hi iam div</div>
+</body>
+</html>
