@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid2</title>
     <style>
-        
+        /* container properties are : align-content,align-items,justify-content,justify-items......
+         */
+   .container{
+    display:grid;
+    height:100%;
+    background-color: darkblue;
+    grid-template-columns: repeat(2,60px);
+    row-gap:2px;
+    justify-items: start;
+    align-items: center;
+    place-items: center;
+    justify-content:start;
+    grid-template-areas: "a a"
+    "c c" ;
+   }
+   .item{
+    width:25px;
+    height: 50px;
+    background-color: rgba(157, 157, 197, 0.998);
+   }
+  .item1{
+   grid-area: a;
+  }
+  .item2{
+   grid-area: c ;
+  }
     </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+       
+    </div>
 </body>
 </html>

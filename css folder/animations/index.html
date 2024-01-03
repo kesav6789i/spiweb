@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+    .container{
+        height: 80vh;
+        width: 60vw;
+        background-color: orange;
+        border: 2px black solid;
+
+    }
+    .box{
+        height: 20vh;
+        width: 10vw;
+        background-color: white;
+        border: 2px black solid;
+        margin: 10px;
+        /* animation-name: aang;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 5s;
+        animation-iteration-count: 1;
+        animation-direction:reverse;
+        /*--- reverse works from( to --> from)--- 
+        animation-fill-mode: backwards; */
+       animation:aang 4s ease-in 5s 1 reverse ;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: aang 2s ease-in-out 3s 1,
+         harry2 3s ease-in-out 3s 1;
+     */
+
+    }
+    @keyframes aang{
+        from{
+            font-size: 16px;
+            background-color:blue;
+        }
+        to{
+            font-size: 20px;
+            background-color: turquoise;
+        }
+    }
+    /* @keyframes harry2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            hi iam box
+        </div>
+    </div>
+</body>
+</html>
