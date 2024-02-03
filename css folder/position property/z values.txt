@@ -7,8 +7,8 @@ Position
 static - default position (The top, right, bottom, left, and z-index properties have no effect)
 relative - element is relative to itself. (The top, right, bottom, left, and z-index will work)
 absolute - positioned relative to its clo sest positioned ancestor. (removed from the flow)
-fixed - positioned relative to browser. (removed from flow)
-
+fixed - positioned relative to browser i.e entire screen. (removed from flow)
+sticky - positioned to its element only
 ******z-index*****
 
 
