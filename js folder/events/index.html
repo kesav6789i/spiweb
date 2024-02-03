@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <style>
+        p{
+            width: 200px;
+            height:20px;
+            border: 2px solid black;
+            background-color: rgb(155, 139, 170);
+        }
+    </style>
+</head>
+<body><p>hi this paragraph</p>
+    <script>
+        let p=document.querySelector("p");
+        // p.onmouseover=() =>{
+        //     alert("this is paragraph");
+        //     console.log("iam console");
+        // }//this will not execute as this function is overridden in below function
+        // p.onmouseover=() =>{
+        //     alert("this is second paragraph");
+        //     console.log("iam second console");
+        // }//this function will execute
+    
+   
+    p.addEventListener("mouseout",(e) => {
+        alert("hello");
+      console.log(e.type);
+
+    });//try to as mouseout property as inline and observe changes
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+</head>
+<style>
+    li:first-child{
+        background: red;
+    }
+    li:nth-last-child(2){
+        background: #666;
+    }
+     li:nth-of-type(2){
+        background-color: #089;
+    } 
+    div + a{
+        background-color: #bfc92fd1;
+    }
+    .parent::before{
+        content: "hi";
+        background-color: aquamarine;
+    }
+    /* try this */
+</style>
+<body>
+    <div class="parent">
+    <div class="main">
+    <li class="item" id="item1">1</li>
+    <li class="item" id="item2">2</li>
+    <li class="item" id="item3">3</li>
+    <li class="item" id="item4">4</li>
+    <li class="item" id="item5">5</li>
+    <li class="item" id="item6">6</li>
+    <li class="item" id="item7">7</li>
+    <li class="item" id="item8">8</li>
+    <li class="item" id="item9">9</li>
+    <li class="item" id="item10">10</li>
+</div>
+</div>
+<div class="main2">
+    <li class="itemm" id="itemm1">11</li>
+    <p>11.1</p>
+    <li class="itemm" id="itemm2">12</li>
+    <li class="itemm" id="itemm3">13</li>
+    <li class="itemm" id="itemm4">14</li>
+   
+    <li class="itemm" id="itemm5">15</li>
+    <p>15.1</p>
+</div>
+<a href="">efa</a>
+<li></li>
+<li></li>
+<a href="">rtyuio</a>
+<a href="">ghjk</a>
+</body>
+</html>
+
+<!-- //refer cheat sheet for all type of selectors -->
