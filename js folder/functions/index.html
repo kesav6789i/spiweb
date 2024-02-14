@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+  
+  //declaration ---parameters
+   function fun(val1,val2){
+    return val1;
+   }
+//call   ---argument
+let k=fun(5,6);
+
+console.log(k);
+
+
+// arrow functions
+ let fun2 = () =>{
+    console.log("hi");
+}
+
+// arrow function call
+ 
+// syntax :varname(para);
+ fun2();
+
+
+
+ // forEach applied on array,strings...it do not return any value unlike map
+ a=[1,2,3]
+ console.log("testing on forEach");
+a.forEach(element => {
+    console.log("hi "+ element);
+ });
+// b=a.forEach(element => {
+//     console.log("hi "+ element);
+//  });
+//  console.log(b);
+
+
+
+// map() applied on array,strings...it  return any value and store it in new array
+a=[1,2,3]
+ console.log("testing on map");
+c=a.map(element => {
+    console.log("hi "+ element);
+    return element*3;
+ });
+
+ console.log(c);
+
+
+
+ //filter on condition like map()
+// try this with map() and observe changes
+a=[1,2,3,4];
+console.log("testing on filter");
+d=a.filter(element => {
+    console.log("hi "+ element);
+    if(element%2===0)
+    return element*3;
+ });
+
+ console.log(d);
+
+
+    </script>
+</body>
+</html>
