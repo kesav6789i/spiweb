@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+.main{
+height:100%;
+width: 100%;
+/* background-color: red; */
+}
+.intro{
+    width:100%;
+    height: 40%;
+    background-color: aliceblue;
+    padding: 20px;
+}
+.intro h1{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:100px;
+    line-height:80px;
+    color: hsl(206, 70%, 65%);
+   letter-spacing: -2px;
+}
+.flex1{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top:10px ;
+    padding-left: 20px;
+}
+.flex1 h4{
+    font-weight: 100;
+}
+.flex1 i{
+    color:#0088ff;
+}
+.imgdiv{
+    height:80% ;
+    width:100%;
+    background:#56b1d7;
+   /* margin: 20px; */
+   border: 2px solid #56b1d7;
+    /* background-image: url("https://plus.unsplash.com/premium_photo-1701007331833-14a00e447d6a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D" );
+   background-size: cover;
+   background-position:bottom center; */
+}
+.im{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius: 50%;
+
+  /* object-position: top center; */
+}
+.content{
+    height:30%;
+    width:100%;
+    display:flex;
+    padding: 20px;
+    font-family: "Caveat", cursive;
+    color: rgb(140,130,160);
+    /* background: red; */
+    /* gap:500px; */
+}
+.content h3{
+    padding: 20px;
+    width:50%;
+    /* background: yellow; */
+   
+    border-right: 2px solid #56b1d7;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 30px;
+    
+}
+.icons i{
+    color:#14638b9a;
+}
+.con2{
+    height:82%;
+    width:100%;
+    display: flex;
+    padding: 30px;
+    border-left: 2px solid #56b1d7;
+    /* border:2px solid black; */
+}
+.divp1{
+    width:30%;
+    height:100%;
+    padding: 25px;
+    font-size: 120px;
+    letter-spacing: -10px;
+    font-family: "Rubik Glitch Pop", system-ui;
+    font-weight: 700;
+    color: #56b1d7;
+    /* background-color: #0088ff; */
+    /* border-right:2px solid; */
+}
+.divp2{
+    padding: 10px;
+    border-left: 2px solid #56b1d7;
+}
+.p1, .p2
+{
+    display: flex;
+    padding:10px;
+}
+.p1{
+    border-bottom:2px solid #56b1d7;
+ 
+    /* background-color: yellow; */
+}
+.p1 div,.p2 div{
+    width:50%;
+    padding: 10px;
+/* padding-left: 10px;
+padding-top: 10px;
+padding-right: 10px; */
+}
+.one{
+    /* background: yellowgreen; */
+    border-right:2px solid #56b1d7;
+}
+.divp2 h3{
+font-size: 25px;
+padding-bottom: 5px;
+font-family: cursive;
+font-weight: 100;
+color:#34c9eb;
+}
+.divp2 p{
+    font-family: "Caveat", cursive;
+    font-size: 18px;
+    color: rgb(140,130,160);
+}
