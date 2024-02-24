@@ -25,12 +25,21 @@
         //     console.log("iam second console");
         // }//this function will execute
     
-   
-    p.addEventListener("mouseout",(e) => {
+ 
+    p.addEventListener("mouseout",function callbackk() {
         alert("hello");
       console.log(e.type);
 
-    });//try to as mouseout property as inline and observe changes
+    });
+    p.removeEventListener("mouseout",function callbackk() {
+        alert("hello");
+      console.log(e.type);
+
+    });
+    console.log(callback);
+    
+    //try to as mouseout property as inline and observe changes i.e (onmouseout)
+    //  ----- >>>>  "on" is not used in eventlisteners  i.e(mouseout is used but not onmouseout)<<<< -------
     
     
     

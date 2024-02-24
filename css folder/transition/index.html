@@ -10,13 +10,16 @@
             height:250px;
             background-color:palevioletred;
             transition-property:background-color;
+            /* transition-property: all; */
             /* transition-property: width,font-size,background-color; */
             /* you can apply it on the 3 functions ....*/
             transition-duration: 3s;
-            transition-timing-function: ease-in;
+            transition-timing-function: ease-in-out;
             transition-delay: 1s;
             /* shorthand-representation */
             /* transition:background-color  3s ease-in 1s; */
+
+            /* *****note:transition is applied on pseudoclasses******* */
         }
         .box:hover{
             background-color:red;
@@ -29,5 +32,8 @@
     <div class="container">
         <div class="box">hi this is box where u can see my background and text transitions</div>
     </div>
+
+
+
 </body>
 </html>

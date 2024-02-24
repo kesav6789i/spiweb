@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events2</title>
+    <style>
+        div{
+            width: 250px;
+            color: rgb(255, 170, 0);
+            border: 2px solid black;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+<button id="btn1" name="button" onclick="alert('iam onclick in html (i.e inline)'); console.log('iam clicked and iam btn1');">click me! onclick</button>
+<div id="btn2" ondblclick="alert('iam ondblclick'); console.log('iam clicked and iam btn2');">click me!! its ondbclick</div>
+    <script>
+        let butn=document.querySelector("#btn1");
+        butn.onclick=  function clicking(){
+            // it overrides html attributes
+            // on same events in inline and script ---- greater priority is given to script  than inline
+            alert("iam onclick in script");
+        }
+        butn.onclick=  function clicking(eventobject){
+            // it overrides before event
+            console.log("iam overriden of onclick in script");
+            console.log(eventobject);
+            console.log("event pointer type :"+eventobject.pointerType);
+            console.log("event type :"+eventobject.type);
+        }
+        let btnn2=document.querySelector("#btn2");
+        btnn2.onmouseover= () => {
+            console.log("hovering event");
+        }
+    </script>
+</body>
+</html>

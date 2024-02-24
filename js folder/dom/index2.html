@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .headd{
+        visibility:hidden;
+    }
+</style>
+
+<body>
+   <h1 class="headd">iam hidden</h1>
+<div class="box">
+    <p id="para" href="helo"  class="keek"><i>hello </i>hi iam para</p>
+<img id='image' src="" alt="hi " >
+<h1 id="heading">hi iam heading</h1>
+</div>
+<div class="box">iam div2</div>
+    
+<script>
+let p=document.getElementById('para');
+console.log(p);
+let div=document.getElementsByClassName("box");//poi poi
+console.log(div); //returns a list
+console.log(div[0]);
+console.log(p.tagName);
+console.log(p.innerText);
+console.log(p.innerHTML);
+
+let headdd=document.querySelector("headd");
+//console.log(headdd.innerText);// couldn't show anything as it is hidden
+// console.log(headdd.textContent);
+
+// //get and set attribute
+// console.log(p.getAttribute("href"));
+// p.setAttribute("href","helloiam");
+// console.log(p.getAttribute("href"));
+
+
+// //adding another class to the tag
+// console.log(p.getAttribute("class"));
+// p.classList.add("keerthi");
+// console.log(p.getAttribute("class"));
+
+// //try out u can actually (add one attribute not existing )or (set its value) 
+// let image=document.querySelector("#image");
+// image.setAttribute("nellore","its an image");
+// console.log(image.getAttribute("nellore"));
+
+
+// creating an element dynamically
+
+
+    </script>
+</body>
+</html>

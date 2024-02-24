@@ -143,3 +143,17 @@ color:#34c9eb;
     font-size: 18px;
     color: rgb(140,130,160);
 }
+.download{
+    position: fixed;
+    top:20px;
+    right: 20px;
+    
+}
+.download a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: hsla(206, 90%, 34%, 0.84);
+    border-radius: 200px;
+   
+
+}

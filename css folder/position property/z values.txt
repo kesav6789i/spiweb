@@ -8,7 +8,10 @@ static - default position (The top, right, bottom, left, and z-index properties 
 relative - element is relative to itself. (The top, right, bottom, left, and z-index will work)
 absolute - positioned relative to its clo sest positioned ancestor. (removed from the flow)
 fixed - positioned relative to browser i.e entire screen. (removed from flow)
-sticky - positioned to its element only
+
+sticky - positioned to its element only (confined to its actual parent and ( not removed from flow),   <<<<,more like relative>>>>>> )
+
+
 ******z-index*****
 
 
@@ -22,4 +25,18 @@ read it to understand better :)
 1.generally z-index is zero...but in first and second ...the second has highest z value than the first until u set the z-index for it....
 2.the more the z-index the more its value
 3.if position is static then z-value cannot be set 
+4.z-index can be set on positioned elements(except static)
 
+
+
+
+
+difference b/w sticky and fixed
+What's the difference?
+position: fixed mean fixed to the viewport. We tell it where to position itself (top, bottom, right, or left) and it will stay there when user scrolling.
+
+ position: sticky it won't affect until we define offset, like top: 10px. So the element will scroll like others until it reaches the offset and then stay on its position. And it stay within its parent, once the parent scroll off the page it leaves with it.
+
+
+ open link below
+ https://dev.to/suryawiguna/css-position-fixed-vs-sticky-5232#:~:text=What's%20the%20difference%3F,offset%2C%20like%20top%3A%2010px%20.
