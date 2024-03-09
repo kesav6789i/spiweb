@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // checkmoney
+        // if(checkwomen) may eligible or may not
+       
+        function checkmoney(amt)
+        { let k="hi"
+            let  pr=new Promise(function(resolve,reject){
+                if(amt) {
+                    resolve("amt is there "+amt+" "+k)
+                    // resolve(amt)
+                }
+                else{
+                    reject("amt is not there")
+                }
+            })
+           return pr;
+        }
+    
+        let amt=Number(80);
+   
+     let promise=checkmoney(amt);
+      
+        promise.then(
+          
+      function(msg){
+        k=6
+        // var l=6;
+        setTimeout(()=>{
+            console.log(msg+" "+k);
+            // l=9;
+            // console.log(l)
+        },7000)
+             
+              return 123;
+            // return l ;
+        }
+         
+           
+        )
+            .catch(
+                function(msg){
+              console.log(msg)
+            } 
+            )
+
+    .then(
+        function(data){
+            console.log(data);
+        }
+    )
+        //   .then()
+ 
+        // function checkmoney(amt) {
+        //     return new Promise(function(resolve, reject) {
+        //         if (amt) {
+        //             resolve("amt is there: " + amt);
+        //         } else {
+        //             reject("amt is not there");
+        //         }
+        //     });
+        // }
+
+        // let amt = Number(60);
+        // let promise = checkmoney(amt);
+
+        // promise.then(
+        //     function(msg) {
+        //         console.log(msg);
+        //     }
+        // )
+        // .catch(
+        //     function(msg) {
+        //         console.log(msg);
+        //     } 
+        // );
+   
+
+            
+    </script>
+</body>
+</html>

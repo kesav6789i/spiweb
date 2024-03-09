@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises api</title>
+</head>
+<body>
+
+    <script>
+        let p1=new Promise((resolve,reject)=>{
+            setTimeout(()=> 
+            // resolve("p1 success")
+            reject("p1 fails")
+            ,3000)
+        });
+        let p2=new Promise((resolve,reject)=>{
+            setTimeout(()=> 
+            // resolve("p2 success")
+            reject("p2 fails")
+            ,1000)
+        });
+        let p3=new Promise((resolve,reject)=>{
+            setTimeout(()=>
+            //  resolve("p3 success")
+            reject("p3 fails")
+             ,2000)
+        });
+        Promise.all([p1,p2,p3])
+        .then((result)=> console.log(result))
+        // .catch((err) => console.log(err))
+
+
+    // checkout
+    //     1.Promise.all([array of promises])  ===>> returns a promise
+    //     descrip:either  all fulfilled or error ,,, fast fail 
+    //     2.Promise.allSettled()
+    //     descrip:wait for all promises to settle 
+    //     3.Promise.race()
+    //     des: return the valuue of first settled promise   [ settle can be either fulfilled or rejected]
+    //     4.Promise.any()
+    //     des: wait for first fulfilled promise
+    </script> 
+</body>
+</html>
