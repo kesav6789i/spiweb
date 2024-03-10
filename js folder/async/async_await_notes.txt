@@ -1,0 +1,28 @@
+When you use `await` with a Promise, it pauses the execution of the asynchronous function until the Promise is settled (either fulfilled with a value or rejected with a reason). If the Promise is not fulfilled (i.e., it is still pending), the execution will be paused until the Promise is resolved or rejected.
+
+In such a scenario, the code after the `await` line will not be immediately executed. Instead, it will wait until the Promise is settled, and then the function will continue its execution based on the result of the Promise.
+
+Here's an example to illustrate this:
+👇👇👇👇👇👇code bro
+```javascript
+async function exampleAsyncFunction() {
+  console.log('Start');
+
+  // Assume somePromise is an unresolved Promise
+  try {
+    const result = await somePromise;
+    console.log('This line will not be executed if the Promise is unresolved');
+    console.log('Result:', result);
+  } catch (error) {
+    console.error('An error occurred:', error);
+  }
+
+  console.log('End');
+}
+
+exampleAsyncFunction();
+```
+🪶🪱🪱🪱🪱
+In this example, if `somePromise` is still pending when the `await` line is encountered, the execution will be paused until the Promise is settled. The lines following the `await` will only be executed after the Promise is resolved or rejected. If the Promise is rejected, the control will jump to the `catch` block. If it's resolved, the control will continue with the next lines after the `await`.
+
+Keep in mind that using `await` without a `try-catch` block will result in an unhandled Promise rejection, which could lead to an unhandled promise rejection warning in some environments. It's generally good practice to handle errors with a `try-catch` block when using `await`.

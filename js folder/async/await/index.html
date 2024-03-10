@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async_await</title>
+</head>
+<body>
+    <script>
+        let p1=new Promise((resolve,reject)=>{
+        setTimeout(()=>{ 
+        //     console.log("p1 fail");
+          
+        //   console.log('hi');
+        //   reject("im not fulfilled");
+          resolve("iam ok")
+        }
+          ,8000)
+      
+        })
+
+        let p2=new Promise((resolve,reject)=>{
+        setTimeout(()=>{ 
+        //     console.log("p1 fail");
+          
+        //   console.log('hi');
+        //   reject("im not fulfilled");
+          resolve("iam ok 2")
+        }
+          ,5000)
+      
+        })
+
+        async function f(){
+            console.log("hi nezuko... iam async function... iam gonna return a promise");
+            // return 123;
+            let wait= await p1;
+            console.log('here1');
+            console.log(wait);
+            let wait1 = await p2;
+            console.log('here2');
+            console.log(wait);
+            return p1;
+            // return 123;
+        }
+       let k=f();
+       k.then((res)=>console.log(res)).catch((err)=>console.error(err) )
+    //   console.log('here1');
+    //   setTimeout(()=>console.log('hi'),0
+    //   )
+
+    // //2.
+    
+
+    </script>
+</body>
+</html>

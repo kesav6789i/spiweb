@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+</head>
+<body>
+    &#128513;
+     &#128060;  <!--  &# -->
+    <!-- htmlCode":["\u0026#128060;"] -->
+    <!-- "unicode":["U+1F43C"] -->
+    &#x1F43C;  <!--  &#x -->
+    <script>
+
+        async function getdataofanime(){
+       let response= await fetch("https://emojihub.yurace.pro/api/random");
+       console.log(response);
+       
+              let dataofanime =await response.json();
+              console.log(dataofanime);
+              
+        }
+getdataofanime();
+
+// fetch('https://emojihub.yurace.pro/api/random')
+//   .then(response => { console.log(response);
+  
+//     return response.json();})
+//   .then(data => console.log(data))
+//   .catch(error => console.error('Error:'+ error));
+
+    </script>
+</body>
+</html>
