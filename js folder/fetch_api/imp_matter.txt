@@ -1,0 +1,14 @@
+In the Fetch API, the Response object represents the response to a request. The response object provides various methods and properties to interact with the response data. The primary form of the response data can be accessed using methods like text(), json(), blob(), etc., depending on the content type of the response.
+
+For example, to get the response data as JSON, you would use the json() method:
+
+
+
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
+
+
+Here, `response.json() returns a promise that resolves with the parsed JSON data from the response. Other methods like text() would be used if the response contains plain text, and blob()` if it contains binary data. The appropriate method depends on the type of data you expect in the response.
