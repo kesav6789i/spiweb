@@ -1,12 +1,12 @@
-const api_url = "https://api.quotable.io/random";
+const api_url = "https://anime-chan.herokuapp.com/api/quotes";
 const quoteRandom = document.getElementById('quote');
 const quoteAuthor = document.getElementById('author');
 const getQuote = async (url) => {
     const response = await fetch(url);
     var quote = await response.json();
-    quoteRandom.innerHTML = quote.content;
-    quoteAuthor.innerHTML = quote.author;
-
+    quoteRandom.innerHTML = quote.quote;
+    quoteAuthor.innerHTML = quote.character;
+    
 }
 
 getQuote(api_url);
